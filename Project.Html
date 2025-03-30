@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael Marzook | Projects</title>
+    <title>Michael Marzook Projects</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
@@ -27,15 +27,20 @@
                 <span></span>
                 <span></span>
             </div>
-            <div class = "menu-links"> 
-                <li><a href= "index.html" onclick="toggleMenu()">About </a></li>
-                <li><a href= "Project.Html" onclick="toggleMenu()">Projects</a></li>
-                <li><a href= "MyGoals.html" onclick="toggleMenu()">Goals</a></li>
-                <li><a href= "Resume.html" onclick="toggleMenu()">Resume</a></li>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="index.html" onclick="toggleMenu()">About</a></li>
+                    <li><a href="Project.Html" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="MyGoals.html" onclick="toggleMenu()">Goals</a></li>
+                    <li><a href="Resume.html" onclick="toggleMenu()">Resume</a></li>
+                </ul>
             </div>
+            
         </div>
 
     </nav>
+    <script src="script.js"></script>
+
 <body>
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
@@ -46,16 +51,17 @@
            
             <div class="details-container">
                 <div class="article-container">
-                    <img src="./assets/stacked.png" alt="K1 Speed Project" class="project-img" />
+                    <img src="./assets/assets/stacked.png" alt="K1 Speed Project" class="project-img" />
                 </div>
                 <h2 class="experience-sub-title">Business Process Redesign: K1 Speed</h2>
-                <p>
-                Optimized K1 Speed's customer management by implementing a digital queuing system, enhancing satisfaction, reducing refunds, and improving retention. Leveraged process models, data flows, and risk analysis 
-                to streamline operations, achieving a 140% ROI through real-time wait times and a more efficient CRM.               
-                </p>
-
+                <section id="projecttext1">
+                    <p>
+                    Optimized K1 Speed's customer management by implementing a digital queuing system, enhancing satisfaction, reducing refunds, and improving retention. Leveraged process models, data flows, and risk analysis 
+                    to streamline operations, achieving a 140% ROI through real-time wait times and a more efficient CRM.               
+                    </p>
+    
                 <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/Final Draft Business Report.pdf', '_blank')">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/assets/Final Draft Business Report.pdf', '_blank')">
                         View Project
                     </button>
                 </div>
@@ -64,16 +70,18 @@
            
             <div class="details-container">
                 <div class="article-container">
-                    <img src="./assets/microsoft-sql-server4529.jpg" alt="SQL Server Project" class="project2-img" />
+                    <img src="./assets/assets/microsoft-sql-server4529.jpg" alt="SQL Server Project" class="project2-img" />
                 </div>
                 <h2 class="experience-sub-title2">SQL Server Project</h2>
+                <section id="projecttext2"> 
                     <p>
                     Developed a relational database in SQL Server with a normalized schema of seven interconnected tables, enforcing data integrity through primary and foreign keys. Executed complex SQL queries for 
                     data insertion, aggregation, and reporting, delivering insights on customer spending and product sales.
 
                     </p>
+       
                 <div class="btn-container2">
-                    <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/Group 3 - MIS 380 Final Project.pdf', '_blank')">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/assets/Group 3 - MIS 380 Final Project.pdf', '_blank')">
                         View Project
                     </button>
                 </div>
@@ -81,6 +89,7 @@
     
         </div> 
     </section>
-    
+</body>
+ 
                     
 </html>
