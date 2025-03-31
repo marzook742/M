@@ -1,6 +1,9 @@
 
 
 
+
+
+
 @media screen and (max-width: 1400px){
     #profile {
         height: 83vh;
@@ -45,11 +48,7 @@
         margin: 0 5%;
 
     }
-    .section_pic-container {
-        width: 275px;
-        height: 275px;
-        margin: 0 auto 2rem;
-    }
+
     .aboutme {
         margin-top: 0;
 
@@ -81,7 +80,7 @@
         width: 175px;
         height: 175px;
         margin: 0 auto 2rem;
-        margin-top:;
+        margin-top;
     }
     .aboutme {
         margin-top: 0;
@@ -204,6 +203,7 @@ section {
 }
 
 .careervision1{
+    align-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -221,18 +221,180 @@ section {
 /* Default styles for the image */
 /* Default (Desktop) - Image is visible */
 .resume-img {
-    display: block; /* Ensure the image is visible by default */
+    display: none; /* Ensure the image is visible by default */
     width: 100%;    /* Make the image responsive */
     max-width: 600px;  /* Set a maximum size for the image on desktop */
     height: auto;   /* Keep the aspect ratio */
     margin: 0 auto; /* Center the image */
 }
-
-/* Mobile - Hide the image on screens smaller than 768px */
-@media screen and (max-width: 768px) {
-    .resume-img {
-        display: none;  /* Hide the image on mobile */
+/* Prevent changes on larger screens */
+@media screen and (max-width: 1200px) {
+    /* Prevent horizontal scrolling */
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        text-align: center; /* Center all text */
     }
-}
 
+    /* Profile Section (Only Mobile) */
+    #profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    /* Ensure Buttons are Centered */
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    .btn {
+        width: 80%;
+        max-width: 250px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Fix Socials (LinkedIn Icon) */
+    #socials-container {
+        margin-top: 1rem;
+    }
+
+    .icon {
+        display: block;
+        margin: 0 auto;
+        width: 35px;
+        height: 35px;
+    }
+
+    /* About Me Section Fix */
+    .about-description {
+        max-width: 90%;
+        margin: 20px auto;
+        font-size: 0.9rem;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    /* Fix Footer Contact Info Alignment */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content p {
+        margin: 5px 0;
+        align-items: center;
+    }
+
+    /* iPhone SE Specific Fixes */
+    @media screen and (max-width: 375px) {
+        .title {
+            font-size: 1.5rem;
+        }
+
+    }
+    .section_pic-container {
+        display: none;
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+ body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        text-align: center; /* Center all text */
+    }
+
+    /* Profile Section (Only Mobile) */
+    #profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    /* Ensure Buttons are Centered */
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    .btn {
+        width: 80%;
+        max-width: 250px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Fix Socials (LinkedIn Icon) */
+    #socials-container {
+        margin-top: 1rem;
+    }
+
+    .icon {
+        display: block;
+        margin: 0 auto;
+        width: 35px;
+        height: 35px;
+    }
+
+    /* About Me Section Fix */
+    .about-description {
+        max-width: 90%;
+        margin: 20px auto;
+        font-size: 0.9rem;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    /* Fix Footer Contact Info Alignment */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content p {
+        margin: 5px 0;
+    }
 
