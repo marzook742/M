@@ -376,5 +376,5 @@ section{
 
 
 .footer a:hover {
-    text-decoration: underline; /* Underline the link on hover */
+    text-decoration: none; /* Underline the link on hover */
 }
